@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AccioJob-BM</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+      *
+      {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://acciojob.com/src/Navbar/logo.svg"
+            alt="AccioJob Logo"
+            width="125"
+            height="50"
+          />
+          <span class="horizantal-line border-end py-2 m-2"></span>
+          <img
+            src="https://pibindia.wordpress.com/wp-content/uploads/2016/10/nsdc-logo.png"
+            alt="AccioJob Logo"
+            width="125"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Course
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                >AccioJob Reviews</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Scholarship Test</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="btn btn-outline-primary px-4 fw-5 fst-italic">
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- sub section header -->
+    <div
+      class="announce-bar fst-italic bg-primary text-white text-center position-fixed w-100"
+    >
+      Next batch starts in <span>⏳</span> 22 Days, Hurry!
+    </div>
+
+    <!-- main section  -->
+    <main class="main-container d-flex gap-3 m-4 py-5">
+      <div class="left-container w-75">
+        <h1 class="heading fst-italic">
+          Launch Your Tech Career in
+          <span class="text-primary"> Analytics & Software Dev</span> from
+          Scratch
+        </h1>
+        <p class="main-content-p">
+          Curriculum designed and taught by Alumni from IIT's & Leading Tech
+          Companies
+        </p>
+        <div class="main-sub-container py-2 shadow-lg">
+          <div class="wrapper-container mx-2">
+            <div class="wrapper-img">
+              <img
+                alt="logo"
+                src="https://acciojob.com/_next/static/media/medel.26c4481e.svg?imwidth=96"
+              />
+            </div>
+            <div class="wrapper-content">
+              <p class="heading-1">41 Lacks</p>
+              <p class="heading-2">Highest Salary</p>
+            </div>
+          </div>
+          <div class="wrapper-container">
+            <div class="wrapper-img">
+              <img
+                alt="logo"
+                src="https://acciojob.com/_next/static/media/people_orange.3c733ba9.svg?imwidth=48"
+              />
+            </div>
+            <div class="wrapper-content">
+              <p class="heading-1">300+</p>
+              <p class="heading-2">Hiring partners</p>
+            </div>
+          </div>
+          <div class="wrapper-container">
+            <div class="wrapper-img">
+              <img
+                alt="logo"
+                src="https://acciojob.com/_next/static/media/sheild_green_check.eb639f41.svg?imwidth=96"
+              />
+            </div>
+            <div class="wrapper-content">
+              <p class="heading-1">100%</p>
+              <p class="heading-2">Job Gurantee</p>
+            </div>
+          </div>
+          <div class="wrapper-container">
+            <div class="wrapper-img">
+              <img
+                alt="logo"
+                src="https://acciojob.com/_next/static/media/doler_round_blue.a2c7bc89.svg?imwidth=96"
+              />
+            </div>
+            <div class="wrapper-content">
+              <p class="heading-1">8.3 LPA</p>
+              <p class="heading-2">AverageSalary</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub-footer position-relative top-50 shadow-lg px-4 py-2">
+          Made with 💙 by an AccioJob Student
+        </div>
+      </div>
+
+      <div class="right-container shadow-box text-center shadow-lg">
+        <h2>Start Attending live classes for Free!</h2>
+        <p>Live lectures & Assignments curated by Top Tech proffesionals</p>
+        <form action="" method="post" class="p-2">
+          <div
+            class="d-flex justify-content-center align-items-center gap-2 form-input"
+          >
+            <i class="fa-regular fa-user"> </i>
+            <input type="text" placeholder="Samvrant Samantaravay" />
+          </div>
+          <div
+            class="d-flex mt-3 justify-content-center align-items-center gap-2 form-input"
+          >
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" placeholder="Phone" />
+          </div>
+
+          <button class="mt-4">Apply Now For Free ></button>
+        </form>
+        <div class="form-footer">
+          <p class="form-footer-content text-center px-5">
+            By clicking Apply Now, you agree to our
+            <span class="text-primary">Terms & conditions</span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- courses section -->
+    <section class="courses-section">
+      <p class="p-gradient-text pt-5">Learn Full-Stack Web Development</p>
+      <h2 class="text-primary pb-5">Our Courses</h2>
+      <div class="courses-sub-section d-flex justify-content-center gap-5 mt-4">
+        <div class="courses-left-card p-3">
+          <h3 class="fst-italic">Beginner</h3>
+          <div class="card-content">
+            <span>100% Job Gurantee</span> <span>Lifetime Access</span>
+          </div>
+          <p class="card-content-p">
+            for you to start their coding journey from scratch
+          </p>
+          <div class="course-description">
+            <div class="course-info d-flex justify-content-around">
+              <p>Placements Starts</p>
+              <p class="fst-italic">in 4 Months</p>
+            </div>
+            <div class="horizontal-line"></div>
+
+            <div class="mt-3 d-flex justify-content-around text-wrap">
+              <p class="ms-lg-5">Eligibility</p>
+              <p class="fst-italic">
+                Final Year students or Graduate, All degrees
+              </p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="mt-3 course-info d-flex justify-content-around">
+              <p>Duration</p>
+              <p class="fst-italic">12 Months</p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="mt-3 course-info d-flex justify-content-around">
+              <p>Daily Efforts</p>
+              <p class="fst-italic">5-7 hours</p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="mt-3 course-info d-flex justify-content-around">
+              <p>Next Batch</p>
+              <p class="fst-italic">7th Jun 2024</p>
+            </div>
+            <button class="btn btn-outline-primary">Brochure</button>
+            <button class="btn btn-primary">Learn More ></button>
+          </div>
+        </div>
+
+        <!-- right card -->
+        <div class="courses-right-card p-3">
+          <h3 class="fst-italic">Intermediate</h3>
+          <div class="card-content">
+            <span>Pay After Placement</span> <span>Lifetime Access</span>
+          </div>
+          <p class="card-content-p">
+            for you to start their coding journey from scratch
+          </p>
+          <div class="course-description">
+            <div class="mt-3 course-info d-flex justify-content-around">
+              <p>Placements Starts</p>
+              <p class="fst-italic">in 6 Months</p>
+            </div>
+            <div class="horizontal-line"></div>
+
+            <div
+              class="mt-3 course-info d-flex justify-content-around text-wrap"
+            >
+              <p class="ms-lg-5">Eligibility</p>
+              <p class="fst-italic">2019-2023 Batch students, All Degrees</p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="mt-3 course-info d-flex justify-content-around">
+              <p>Duration</p>
+              <p class="fst-italic">10 Months</p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="mt-3 course-info d-flex justify-content-around">
+              <p>Daily Efforts</p>
+              <p class="fst-italic">8-10 hours</p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="course-info d-flex justify-content-around">
+              <p>Next Batch</p>
+              <p class="fst-italic">7th Jun 2024</p>
+            </div>
+            <button class="btn btn-outline-primary">Brochure</button>
+            <button class="btn btn-primary">Learn More ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Companies section -->
+    <section class="companies-section">
+      <p class="p-gradient-text pt-5">over 300+ hiring partners</p>
+      <h2 class="text-center">Top Startups & MNC's</h2>
+      <h2 class="text-primary text-center">Software Engineer</h2>
+      <p class="text-center text-content">From Acciojob upto 41 Lakhs</p>
+      <div class="companies-logo-sections m-auto">
+        <ul>
+          <li>
+            <figure>
+              <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/d85a/692e/38df2c57ef3c2afa6dd5bc4140e91e92?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hqy57ZjVF~AqVrsMD0d-mE6mTi44f8tjReqmaE~syf7tB5gF8dYFBCUTzj3rUaJUaK2eyVsErcisKfbcTQZ5uXtW7RG-I953zMCEkXtwWye8opj9mhWpEesUjXBqprde-jr0w8gsdXXu1Ac7L7Lu-WrJ~iVip8rKq7aIMgGxh6GazccS9SugS0GLZxuYvx3cjdjPYsQhpjvIi3HkLpZPcxZrgFjrqjbprPexahOkzp0r1CSg2pJrytiH8qpKBttFd~Dc7-Du91UGTDQCw0vOmAN7i1SH~z~NtVveUodLaLpDe9yfx1CG96aKDgCiemlddntkoKHz6FfvZ4qwmaDYuA__"
+              alt="logo-1"
+            />
+            </figure>
+            
+          </li>
+          <li>
+            <figure>
+              <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/c61d/47f1/fc2dbdb3d8b36c3c329b98dfa01f9a65?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=obGzjzBBRF-0LHRTqH7IDXJODrTibuPbagGmxTC3o4v-tPnYKljrAMF4zgxPew4JWbnduFh6Rh01twx93A~CDWG78Ha-NsUGn9dlofuawOsovt7VKrgh0m0UjTYW8Pftg3ScyxvGxznmyzFmmWd8jeLZH50rNgOOj1QL7tBJFxqunsX~x38whsKq0tj2VgYeyDGoeEc1-1kIgokBH6mDgJMzyh0zWJZTlL2eLVgzaV~feJBPCjF-CCBW7XhHlYpoI5HhOdZt2uKIQ3RmCk2BKPxQU8E854KeqaaTwq0DRDuevf3gOfHg1sKzd~D5OmKgvloItnPxPYhvEL56D0hyig__"
+              alt="logo-2"
+              />
+            </figure>
+            </li>
+          <li>
+            <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/1f59/3158/f4dca3cf0ee98dae16ad1d9e51f7ff5b?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OdLtUv~u7nczOKXTbuSHNAJJ1n5ER-MWETHSbEw2INTT78s41TrY2Pv762X80I4A78n1NUWQ0tIEoLzmlSNjdrDh05njxCQVew~NwRsJ1QFJOAUiymH~Qx4Eq5~RfjTv~hCs1S-kxKwdqs4wOU4z5v2ne4rUvHqGymWK7WO3uGAtHqAa84PJPm3K75By5M7tQKi26mGLoYIoeFxoZNobYhgwP5ElIx9I~VGT~v-RIf~na6bUZ2AlmlD-E4dSY0qHxrcEUO59GfmMtXq4vvq4B51EtCZ0Yg7NeKr2LeHlNFJSVsnKDnzg0IBWhKuP02GQ1ahCff~lyWuqdD6ygwpDRA__"
+              alt="logo-3"
+            />
+          </figure>
+          </li>
+          <li>
+            <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/40da/10ca/9e7a0ecbbf2bfa082c06ad11f4ec5de4?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dOGoStapmfDJTCZMzUpQfR0mPQAE58Yeyf0V-wnGYwbPoyMrqsIyqw4kRZUMHjzN~vA7kFgg4IJgfyUksezZ1DJRgSDBzHWloqtaTGVrdTX0M~FZuovapBmiRNlFmiifYGTuNzXt~BmMpbHwOgVUVKQGspnmzThdRqPe7ZTkpn6T5qpOj7ZHPak7WcxgGTozj4LCHyFf165OfWyVpvy0sideAtjBDO2sFpTxyxitJ9nIZJcydeSqTGRt-Zlt4f8ppfWjR4hMspb1HVZNBKKVRIC7rs~JNq1t2FGRdlDHNuGGm3NAGWeCvCk6vld92UzIpt7zxziotnQ71LDElvfuzQ__"
+              alt="logo-4"
+            />
+          </figure>
+          </li>
+          <li>
+            <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/f5ca/f95f/0eb073b510c6826b976fdadca6104fad?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PsY9qZyNFcCXEhIhJVredRGDm7uwasNJnPhF1zUAItMcPMabgc~j719N-KsIGWzxf9TTiML1DuGKpj8tZRz14iSy5-p~vpjAZ5BWRj3NiYr0uZW~B~QGfrRanLsPFRE5Yxtl93zb80fMkE1sLRIH7DqmjsN2CVqmsb6zHBXnAz-khEmucOQq~8hxj1~O1xYpsCQEehJKiZjfn~EGNF4vQyTT31P2qXJM3h1BWr7zIgLczIDb1iTgDANvuygftvNEpedPZaWUQfCqE3rjMD2M6og0P-t6AfxFU4AD7zCI21gbRNtaTSG9RsaATyavZbX65LWKE5-uCTas8ZyOwRY6tg__"
+              alt="logo-5"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/8e40/f7a0/2acb61792f816903bfe347c279e861e8?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PqwhW8L2RmRfwidmltSgd5KseI4GagiJv65wMheZOeW~T~Lhezo5-Hc6FJFz9dWGqybHobe8hH5odGXxBpQfr-IqS5UgeR~CRjEC9Xhh4t~dqEUC36eZFvmn99sntWaSky-IV7quJbiPEPTHVDEj2-ZUA2~ZvOrQYi1P6YH7uSpcmyAPFiXDr~Tzp4zxQNnSAQwq7pDHVxPsh7z6QM8iolT4Kn4mHmlFxXBMYkS~GGdJdoEvqB1CT210~pm0HZf1bqSv8EAn4AGQBAxEvsLD4h6af3cY5OcOwTwY72j0AawDTdenRHzetsFPIxjcGCHNCgKwmlwv49Q8OuFg1L2Tgg__"
+              alt="logo-6"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/486d/38ce/1751e13e90777646c1fb9698fb10ddc8?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pAhwXlWH1ligOP51mV-liNua5q9q5DOD-c~oK3xJc31yEMUuXICqoNFbF3De142xArmNfrevmjUDT0XmB9Zx0G~nStMrtz~9QBwgJavKBm31acew7SilVzl6OXcSgRjzaOsL9kTB4WzQWHLbuA8fYHbHKQqRCYsGfvCqwEa02QrNqKjgHTNFKOQ2hMr1-n2xuuQDmmn--z4Dn13oCJRdTB1mDmbImyOPPwYU1sif8cp3ujI735~YnABJNoLbNWwE62o~jKX2dUCe~mzBuv0X5P65AY73DrzYaF1j0ANjnkjO3pVX~kzzWdYmSN79W5w1IXZgLmq3M7E37xc2KG7e2Q__"
+              alt="logo-7"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/13b4/2285/3aef3ec745dcdccbda8793dd10d97564?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VSODtPwEqoFrUIHkAdfwz59QGtmnaTAfiOAMTTzlT7lr2j8oTJGmhCuoZgc4VlpYmvWjkmlSJwhBQdgvDefOQ2jj-d2B-~XAFvTckTfLvLr6wkSebJkRb18j-JwQQfDgEwPuqi8SfsJ1C1VFJX2d4pFsbzGOmIYzr7BI6M2uZHH-VWin7X8y6hjb6Vi5BdcQFu-eUE7ThxYptK8GPynblT12FPCeVi~AQia94QBLT1dqwXnl2SI72qmWlqX7HXffzeHoY2h59nKft7tP~AWS-EGn0t2-k4UQ6yY13433rlX1U63jUPTrI8uKGrW84vYMM~rbIZgyW0s4~yO5XbFnzg__"
+              alt="logo-8"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/341f/620d/863d55c602b9be9bb78a164d238cd1a5?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mUWJ3Za51mmTGsVKt3yk7l8JXofRUmdp8siFwsgg81gU54XumtHdrCZuPByiX~Zz535lOMEnglCSZPkg4~CwKypuLgrVqrCE0MmEta9iEmOiD2tNpxUpPHCIlUC5LIFok17j~RQdPnJ3LpXU7i7Be9zLt~qonSnUdvHuyfpYaP9tZ9JFKCLT3vYhg~s3Yp8JzT28q2WCCcC8G8EGjaMEsWK8jQYW3EvniUmPSHl6AN~f8WDt~NiFJsnT69OCUllAp6GMQrQHR31KRBLcjCiltK0Culzp8NSqE1ULHG1IxxVSCFltW2uDFKZPTLQA7c7LRRbGavJCfCITxMqSmlFkPg__"
+              alt="logo-9"
+            />
+          </figure>
+          </li>
+
+          <li>
+          <figure>
+            <img
+              width="100px"
+              src="https://s3-alpha-sig.figma.com/img/5292/d401/65a7c68f8c38236d1398a6207363a826?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I3ta254thDK-0wKH59Aq82FpB4OPO4iSI2Itff3YVUUl3n3A8xrk3bHlKbVeolTF7ZGSMuRcgIIdA3QU86sYG-DIJjJurKF0K~9ixtdF0UOBWp0NtTIkkV2t1dUrVfolyb-WZxq9DB~-S2mAB7XUp9fg8zeNVtoztmCZZ9GThFtkOrOmA2xnLrnvvDa0Fw3dSx8dfzoZPoos59xwP6eEL9-LoP495XalBHyhZcp83NKrEoes1YpEHxpqMGZvbQvfMzQGgJWi0Pt0bI~OAWwCnGkHMf56WjBNbRQjcPoY3C9EMuwOQQ~VdYedJeTybkLEUH98sUNq~a4D9aIoc7y49A__"
+              alt="logo-10"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/506f/9e59/fe18e04a31fada916199857ef44758b0?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=maP1j69SGkhjP864cq0PqrUQKdt8xTpW7mxIp2DsCl~IuGFGsdpRFv2Dy02HM~tZzPoFJ2My~DkrElVQQiIz2gGjq8RnoBdKP~WlaCxgrqrg6yS8TQZ-tgsuJkli80kKXCp3bAV6MWmwgK7phgqDzbcIxoF-fmXbOxSInW3p8sZdfGg6WQvjP5KdBP5znwlAqGWi7mMi64kIZvMJbEgZiBf3UzZhdT7O9EP9fBxYfZAuV0hWPvpCeaOnMq713YMQYEX9jm5tqIRZJp2GuV-691r31STp4W-UYH2i5N7uVOrH4f7hdtc8H-YY5-kxan~fh7y1SvTwaDqZWeBEOA6-~w__"
+              alt="logo-11"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/0f01/b819/90083391cd0ef623236f477682f22cad?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lmZjAqLk5RQP~2rLKB5D57eBuMfsnY7Lc4uN9D2Gh4D5m-h-L9a-nBnRzW~TzyQ1Gd3guhMT4qsoMFzRDJBklf2LLARVdzgbSDdkLW3od~eXt9~hu8bwpPu~wNkE6FoKXyNGWAx3JnX~Tb6XrNXEkmRz~Lzy0f5qj-RJVoiMEi~LfgG~1yuCbEVZjvlxwuuzUWsNdIZxTHLtRPeY4CZRqUBymXH4olyTY2iTnpM5Cyp1CCYap6gOu4K07iregIfxdsb75slvOHts7SPTybymMIP6XfAUsRiI9calasNRSCD2dvADLD~JZL8m55e-XeevFU0Xyhnt9QRSvO40-pbkGw__"
+              alt="logo-12"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/fd8b/5dca/e5ddfb627b19567a3c279bb4c1a2d23b?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SH3gV1Oo8H5XpxcKHIkSVJhyffbl4chALcvs67kr5qGEGeYLF12CfJ0UvIxkk5dPIi2mr1uJS9RuDNGqVbo-axHq6mEp2ANbTiBPNBm9ACAyOygwwNWpTgE0Fhm2mury37C8mRor4VMwUyGWG-ebjiIsP8D4Q1U8D1iwy4U~gtvGyLYYEtVqrMRq8baZ-gOY3fF8xfN2sm5Indyw4o3S24T29pD1IZWFn1PsPiVwVgDWr9kPU3bKn5Kv1pZrrKRXK-M~B03l9z8SLkZYhdXnkUuENAWWj65ELz5nnE2AkVwgPjJEi9hzWD8CIf8U9iHe2Gu-IrNKoowba37Y7YdDng__"
+              alt="logo-13"
+            />
+          </figure>
+          </li>
+
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/53c6/e9df/93beb9eeffd380075d08bca6bf9ad033?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e48a~1V5M67GlF1ayDTE~6oHDgEu5pMaUXjiomC7-Fb-1oOayFfSZBzONG01CZrCMQRerwuGKHO~~ludqhPoYKfz7VXqHhgVAnA3kZLQB1hIiREQIY2TZCHfNd8k8O7IB4xl0G0Hg0-dEY3wNeauq3-iNwmRWQA8EL4dE7spI4Th6uk~9k1BKZ6decPN0yG2j4h6gPsKiXLSwjVxVGuU3KxPFI2F6YF1u9TdITQor1shFD2X~-tcNzUjCVT3yt-ngDu8BPcMZKHDMdw8i~GkoyikrNvSJOpkA~YN~~ERQ0iYYjX0JpbzLX8MepaFYyEfYsMDQ1GgZLFObN1twI8-cw__"
+              alt="logo-14"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/86b6/f6cc/4e20fde588b3b7e395fdea3dee82d883?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ljS~AocNTWy7gP23ECol~YibOeTKiNAi2e-6lAZv-ye2fFhQlSKKioz-nL1HeoqX8C~SPPNU~BDIGcFwU5ehmvTVUMwFqnnkS2LK7hFI3cgAKxsdwirDVCqddGcpaEoBB~waflvcPk32BYMj-vwdTXJETh~b31Njs4vHuhzUAkgWQPYC1mylI6D0~FhsOFXUK7nBh-2U5v9ejvUX-2P8gQPlTIWFsdaUHCR9Wo2QxEuCuceq3QNvqwisB4ZFyLzsNOE910XbqMfdY43RTTHVnPS3fb8~bV08-gJGS10TsnIjc31~yG7X~6idnH2Z3Pf8A4aXQ6lRWU9Con0A9LJC0g__"
+              alt="logo-15"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/692e/a363/8a1e3948fe42bb078fc5f4ad3819ab2e?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eFxtceXbFxb71AIn~OwmiCw0kw8ZE9QrR-Q5BvET3nHwb9P4U67oVItpYy56lzB65Wl8E7gkarRTNYrUO~Oy4oZH5taNoipATZbo3Gb4DjLmb1t83oUmrvjfHJeb6gBgd3z10fVrj6K-dJO2ofexwWmkv9jv9ZmHWhYn~-XIvWZKLDh-W9B0~t03c4wT2kWSbxLZpd~rpr0OTzIv58mR7yfDn19In0nJE2rvF2WdO9oHHs-NZuaKNiT~UhUzBGOVx8F7yQsZD~y1GdMDjkNsYmZI5~kwbV~JLUcxF-CdZlESm5iaYrc-KCZAOpOEfGEI4IXW8dUa6MzHw--jUhmRTA__"
+              alt="logo-16"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/d0ce/2d13/9760bc605a6a22a206b31a37dd0f378c?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k5ufcVWihbVydVlHYcXY8HetK92u9QWNGco9cCnmdiOzps1GZmXLe4GeYq89xSF336d4oU-RLwjJ0zmr9w0TLvMHShd3c5M~fTxkaZHEQsNd2tG-IiuGWdpryhzlVcsS003J~AHn-BaN0ZQsWhRYrRk9fz6QBiBXwhBxx8eFvUPjY~ayB3pnwjiOX2UMlu~GsDlSLhzW1-1--7LAHoS5rL5ysyjoPnsUPrYX2EgkCJhzK~rkIb4kyyQvtrWU4CDe44IAI~F-ERCDchPSdDYa6OifweedF2vzwpuwe48TzO~lRYaCBdSDGdM7GOyNKMGa2syxFE4eLMzogIIjPm544Q__"
+              alt="logo-17"
+            />
+          </figure>
+          </li>
+          <li>
+          <figure>
+            <img
+              width="150px"
+              src="https://s3-alpha-sig.figma.com/img/c6e8/0f6b/ec7bbc76d31b3bc59816550814bacd65?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PH3GnHEWmQJtC~QTSq1sJVuedra~~iX17nLDtHB1TgPrQ-veYU1zToe4wsc0niqI2dQJlm0Q7-vRbeeWOk8xiOQHP7Ld~kAsw6wV~M6nNIExH6ADhHalXG72joX761vjXPoxqGE-o-2JYdGNy9lNS1l7irumulOXBn~cgh0ZAVqUrXNIMYiVe9KiVTWDYNLX3LSsNLuXR4myopyA~9HvooZZ6PS1tcAMfZPoHkIPDASb-CUyWZW0tb~eXE~aF-xL6yjsxuqN3Qyc70jRJmDlbRyGWPW7XaBvU09knmYQ~lewv2GGFRW8xErT1nc8UAp2nXglmvM8KJJMxruMZRhkQQ__"
+              alt="logo-18"
+            />
+          </figure>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn-container">
+        <button class="placement-btn btn btn-primary">
+          Placement Reports >
+        </button>
+      </div>
+    </section>
+
+    <!-- Accio Job Wall of Love -->
+    <section class="student-wall">
+      <h2 class="text-center fst-italic">AccioJob Wall of Love</h2>
+      <p class="text-center text-content">Our Alumni Say it Best</p>
+
+      <!-- grid -->
+
+      <div class="parent mx-5 mb-5">
+        <div class="div1 card-1">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 mt-3"
+            >
+              <img
+                src="https://s3-alpha-sig.figma.com/img/5744/653c/d5778208133de1d43a97b8beacdaad35?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IET~ixUshUFtn-966ICRn1pPRNOmXbwXlxFWaRu-fw~vlcD8bQFJgIcs-IzAzh6RT~bazA2DXMv-RMRwFWkBcAJ9hscv1GF2mhsfjVVJVXm2~KYtwAZXszBf9MPFyWZ52mk2rN3uUBj4wJAlC7RyXXs~AyDxn0Jfezm1QmjiInE1EN4hezts2Bd233B-oZl5-EBsHgXhir9qS4vbWe-P8tVgCVKAjmgCTxyKtws2f6SzcPqmoo5SUfM5uJx67nbK9U8BF8QqKqoX5QMsZ9mOMsNFn360CEy2S3oXc~Q-v1iZ2zzruy9SPIkXnngnLMUFxjFNgVmU8a1pfzW~dpo3MA__"
+                alt="img-1"
+              />
+
+              <div class="card-headers">
+                <p class="m-0 p-0 card-name">Virat Kohli</p>
+                <p class="m-0 p-0 card-profession">
+                  SDE-II at Indian Cricket Board
+                </p>
+              </div>
+            </div>
+            <div class="linkedin-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="mt-4 mx-4">
+            <p>
+              My Life changed when I became a part of the AccioJob family.
+              Before that I was not able to score any centuries. As soon as I
+              joined Accio, I hit a century against Afganistan.
+            </p>
+            <p class="card-date">Jun 14, 2022</p>
+          </div>
+        </div>
+        <div class="div2">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 mt-3"
+            >
+              <img
+                src="https://s3-alpha-sig.figma.com/img/ef8e/525b/bae8bb1348dd82ce0023422b70cf33b6?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V-FQOjaJDxf58lbc54yXczE-OBWeeqX5fQhOGY02X4zNkGVKM410ZjDIwbDAY3p221jYs8aUMZLuOPNOzcdLMy3WZuWpwTFZJAngPgNhAGbP~YxxUAP-KKI8iTLAH8K36Z9VlQeNEa3DUYqFWRqq71yBVUJcXGXwViFKow526vf2y2dHdBjMZHP2yQ0o1ng7KCrilw5CBhrg3Z4mMr0KvlFU2PmRDhyli5hyWcva6tjjalBbRYkqKn0geT075clyyDkRa3ciiMz~tE-G1hdn~5N3x-F-6p6asz0DUR3gwVab7cwy5HJHhDcn4irvkRrni8wKrx~zPy6bucTez1z6Kg__"
+                alt="img-2"
+              />
+
+              <div class="card-headers">
+                <p class="m-0 p-0 card-name">Rohit Sharma</p>
+                <p class="m-0 p-0 card-profession">
+                  SDE-II at Indian Cricket Board
+                </p>
+              </div>
+            </div>
+            <div class="linkedin-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="mt-4 mx-4">
+            <p>
+              My Life changed when I became a part of the AccioJob family.
+              Before that I was not able to score any centuries. As soon as I
+              joined Accio, I hit a century against Afganistan. Then I got
+              offers from RCB for IPL as captain again. Bas ab India World Cup
+              Jeet jaye.
+            </p>
+            <p class="card-date">Jun 14, 2022</p>
+          </div>
+        </div>
+        <div class="div3">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 mt-3"
+            >
+              <img
+                src="https://s3-alpha-sig.figma.com/img/7090/cbd3/010f9887f042d6691e3ed5ea1bef7eb9?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ax-ijE8kG2Carnb06DMZst8dH4rceBEQL~FCvM-YZ2-UrkPI~n~K6Rv3AiJFodQjeWTHfFLd8uYBSp55wiZjarzVLhcm5uhvBW0BCe3UA-stx1UkwtiMB2vrkesfOe4Eio-R9Nly3xUai~yb~qdjghkhh0eIakgWDujFL2NDBSSIGCLwbZIrPO5j-L11K8mBUd7ZROjrKcVY4ANTokhc-nrNNfelkVazlXyePSARg2HAdhC8956XXkrZpSSJDBrLb53HpM9ecMhCP7G3p0cDepYeatI7YwIr-0-3wtwclPGKzQ2sJam12MFpDMw8lQh8flyDr1k5MobnCYtH5GEN~g__"
+                alt="img-3"
+              />
+
+              <div class="card-headers">
+                <p class="m-0 p-0 card-name">Ishan Kishan</p>
+                <p class="m-0 p-0 card-profession">
+                  Intern at Indian Cricket Board
+                </p>
+              </div>
+            </div>
+            <div class="quora-icon">
+              <i class="fa-brands fa-quora"></i>
+            </div>
+          </div>
+          <div class="mt-4 mx-4">
+            <p>
+              My Life changed when I became a part of the AccioJob family.
+              Before that I was not able to score any centuries. As soon as I
+              joined Accio, I hit a century against Afg anistan. My Life changed
+              when I became a part of the AccioJob family. Before that I was not
+              able to score any centuries. As soon as I joined Accio, I hit a
+              century against Afganistan.
+            </p>
+            <p class="card-date">Jun 14, 2022</p>
+          </div>
+        </div>
+        <div class="div4">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 mt-3"
+            >
+              <img
+                src="https://s3-alpha-sig.figma.com/img/825a/d553/923e01a784243037b6f30234e7ff78bd?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RGTvDaIJZSs7yjQ-3nraikMeAM5T-oimeSGhx4iuvtRm2T6kAkgNsldnJAR-Y~yMrtEVikMNSx2zXRNvikH2T-B5ACArXMdijji6gN5eEjJamxEjcbDqlZZTsDf~YbGhFF8zqHJD5dogByatSw3OBCPpcxypwGoLL7e~GlGT9ALPG5fkDgCELsMtlZ51z-wvyDReKilIsUG~wZg5aLl~dWUgqrdhYdqeBwfL4tCylMhgr2cHHGCUAWBTlFwpf1XzARE4HMAE39oUle5xqNhXVTeyrUtPSeNTUSlVra6Stb1kj1eGXj5wmdY0XExjtdFBdTmwn~cUpxeG8YAC5pcDtg__"
+                alt="img-4"
+              />
+
+              <div class="card-headers">
+                <p class="m-0 p-0 card-name">Sarfaraz Ahmad</p>
+                <p class="m-0 p-0 card-profession">WK at Pak. Cricket Board</p>
+              </div>
+            </div>
+            <div class="linkedin-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="mt-4 mx-4">
+            <p>
+              Inshallah Boys Played well. My answer also same Inshallah Boys!
+              Well done!
+            </p>
+            <p class="card-date">Jun 14, 2022</p>
+          </div>
+        </div>
+        <div class="div5">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 mt-3"
+            >
+              <img
+                src="https://s3-alpha-sig.figma.com/img/2743/1950/14d557080e1b6b18a22f9ec66cdee4ce?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lt3WmiiBmGPIF4X1P57s2RHz9FXkwibH6twRmoh3X9mkmraHfCaWg9ol91Qk7LfTW0GaBh32UNyZCidJ0K7fKpvP4XZJCUn1PAeaKhulObBqsWUDZNihOv7AD3peM0riO1oFf4FNkl6JGCTiBU3lLcBor4rtyFkyCKFt1mmhIZjUBSuf2eFFzaJJn--FoAD92Bg~oY3tVKCfcrrWr5MmoGHH2UJ7zjIY0cVGsevPO0nw6dQwtphU0dtes8BZtAzLAsddLq3mOroRP8iC8obMzeemLjg54bDPn5XY7UviMIeHHADRHr76p80SJC3aoMFUomDwBU1cME0Xcn4XE7NieA__"
+                alt="img-5"
+              />
+
+              <div class="card-headers">
+                <p class="m-0 p-0 card-name">Virender Sehwag</p>
+                <p class="m-0 p-0 card-profession">
+                  SDE-IV at Indian Cricket Board
+                </p>
+              </div>
+            </div>
+            <div class="linkedin-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="mt-4 mx-4">
+            <p>
+              My Life changed when I became a part of the AccioJob family.
+              Before that I was not able to score any centuries. As soon as I
+              joined Accio, I hit a century against Afganistan. Then I got
+              offers from RCB for IPL as captain again. Bas ab India World Cup
+              Jeet jaye.
+            </p>
+            <p class="card-date">Jun 14, 2022</p>
+          </div>
+        </div>
+        <div class="div6">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 mt-3"
+            >
+              <img
+                src="https://s3-alpha-sig.figma.com/img/825a/d553/923e01a784243037b6f30234e7ff78bd?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RGTvDaIJZSs7yjQ-3nraikMeAM5T-oimeSGhx4iuvtRm2T6kAkgNsldnJAR-Y~yMrtEVikMNSx2zXRNvikH2T-B5ACArXMdijji6gN5eEjJamxEjcbDqlZZTsDf~YbGhFF8zqHJD5dogByatSw3OBCPpcxypwGoLL7e~GlGT9ALPG5fkDgCELsMtlZ51z-wvyDReKilIsUG~wZg5aLl~dWUgqrdhYdqeBwfL4tCylMhgr2cHHGCUAWBTlFwpf1XzARE4HMAE39oUle5xqNhXVTeyrUtPSeNTUSlVra6Stb1kj1eGXj5wmdY0XExjtdFBdTmwn~cUpxeG8YAC5pcDtg__"
+                alt="img-6"
+              />
+
+              <div class="card-headers">
+                <p class="m-0 p-0 card-name">Sachin Tendulkar</p>
+                <p class="m-0 p-0 card-profession">
+                  God at Indian Cricket Board
+                </p>
+              </div>
+            </div>
+            <div class="linkedin-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="mt-4 mx-4">
+            <p>
+              My Life changed when I became a part of the AccioJob family.
+              Before that I was not able to score any centuries. As soon as I
+              joined Accio, I hit a century against Afganistan.
+            </p>
+            <p class="card-date">Jun 14, 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

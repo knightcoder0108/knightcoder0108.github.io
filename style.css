@@ -1,0 +1,364 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  padding-top: 70px; /* Adjust this value if the height of the navbar changes */
+}
+
+nav {
+  padding: 8px 0px;
+}
+.announce-bar {
+  padding: 10px 0px;
+}
+
+/* main section */
+
+.main-content-p {
+  color: #585958;
+}
+.main-sub-container {
+  /* width: 80%; */
+  margin: auto;
+  border: 1px solid #e3e2e2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrapper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+main .heading-1 {
+  font-size: 1.2rem;
+}
+
+main .heading-1,
+.heading-2 {
+  margin: 0px;
+}
+
+main .heading-2 {
+  font-size: 12px;
+}
+
+.sub-footer {
+  width: fit-content;
+  border-radius: 25px;
+  text-align: center;
+}
+/* right contaner */
+.right-container {
+  width: 350px;
+
+  border: 1px solid #e3e2e2;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+/* background shadow */
+
+/* background shadow end */
+
+.right-container p {
+  color: #9fa9b5;
+}
+form .form-input {
+  width: 90%;
+  background-color: #fafafa;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 10px;
+}
+form input {
+  background-color: transparent;
+  border: none;
+}
+
+form button {
+  width: 90%;
+  padding: 8px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #3c75ec, #8341ec);
+  font-style: italic;
+}
+
+/* our courses section */
+
+.courses-section {
+  background-color: #ecf8ff;
+  /* height: 100vh; */
+  text-align: center;
+}
+.courses-sub-section {
+  padding-bottom: 80px;
+}
+.courses-section .p-gradient-text {
+  background-clip: text;
+  background-image: linear-gradient(276.97deg, #992fed, #2f80ed);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.courses-section h2 {
+  text-transform: uppercase;
+}
+.courses-left-card {
+  background-color: white;
+  border: 2px solid #8341ec;
+  border-radius: 10px;
+  width: 35%;
+}
+.courses-section .courses-sub-section .courses-left-card span {
+  background-color: #ecf8ff;
+  padding: 0px 10px;
+  border-radius: 4px;
+  color: #0d6efd;
+  text-align: center;
+}
+
+.card-content-p {
+  font-size: 12px;
+  padding: 8px;
+  color: #575756;
+}
+
+.horizontal-line {
+  margin: auto;
+  border-bottom: 1px solid #cccccc;
+  width: 90%;
+}
+
+.courses-right-card {
+  background-color: white;
+  border: 2px solid #575756;
+  border-radius: 10px;
+  width: 35%;
+}
+
+.courses-section .courses-sub-section .courses-right-card span {
+  background-color: #feeed9;
+  padding: 0px 10px;
+  border-radius: 4px;
+  color: #b17d39;
+  text-align: center;
+}
+
+/* companies section */
+.companies-section {
+  margin: 80px;
+}
+
+.companies-section .text-content {
+  color: #8a8a8a;
+}
+
+.companies-section .p-gradient-text {
+  text-align: center;
+  background-clip: text;
+  background-image: linear-gradient(276.97deg, #992fed, #2f80ed);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.companies-logo-sections > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.companies-logo-sections > ul > li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.companies-section .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Student wall of love  */
+
+.student-wall .text-content {
+  color: #8a8a8a;
+}
+
+.student-wall .parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  /* width: 300px; */
+  /* height: auto; */
+  /* border: 1px solid 575756; */
+  gap: 10px;
+}
+.parent img {
+  width: 100px;
+  border-radius: 50%;
+}
+.div1 {
+  grid-area: 1 / 1 / 6 / 5;
+  border: 2px solid #cccccc;
+
+  border-radius: 5px;
+}
+.div2 {
+  grid-area: 6 / 1 / 13 / 5;
+  border: 2px solid #cccccc;
+
+  border-radius: 5px;
+}
+.div3 {
+  grid-area: 1 / 5 / 8 / 9;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+}
+.div4 {
+  grid-area: 8 / 5 / 13 / 9;
+  border: 2px solid #cccccc;
+
+  border-radius: 5px;
+}
+.div5 {
+  grid-area: 1 / 9 / 7 / 13;
+  border: 2px solid #cccccc;
+
+  border-radius: 5px;
+}
+.div6 {
+  grid-area: 7 / 9 / 13 / 13;
+  border: 2px solid #cccccc;
+
+  border-radius: 5px;
+}
+
+.student-wall .parent .card-name {
+  font-size: 1.7rem;
+}
+
+.student-wall .parent .card-profession {
+  color: #8a8a8a;
+}
+.student-wall .parent .card-date {
+  color: #8a8a8a;
+}
+
+/* icon styling */
+
+.student-wall .parent .linkedin-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d6efd;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+}
+
+.student-wall .parent .quora-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b92a26;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+}
+
+/* Transition  */
+.companies-logo-sections>ul>li>figure>img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.companies-logo-sections>ul>li>figure>img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Transition end */
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: ; */
+  }
+  .left-container {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .main-sub-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* flex-wrap: wrap; */
+    /* padding-top: 25px; */
+    width: 100%;
+    /* padding: 0px 20px; */
+  }
+
+  .left-container .sub-footer {
+    margin: 30px auto;
+    /* text-align: center; */
+    /* margin: auto; */
+  }
+
+  .right-container {
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .student-wall .parent img {
+    width: 40px;
+  }
+
+  .student-wall .parent > div > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .student-wall .parent > div > div > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .courses-left-card,
+  .courses-right-card {
+    font-size: 15px;
+  }
+
+  .courses-left-card .course-description button {
+    margin-top: 5px;
+  }
+  .courses-right-card .course-description button {
+    margin-top: 5px;
+  }
+}
