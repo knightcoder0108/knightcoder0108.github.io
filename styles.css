@@ -11,6 +11,16 @@ body {
 
 #app {
     text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.page {
+    display: none;
+}
+
+#page1 {
+    display: block;
 }
 
 #search-section {
@@ -37,6 +47,43 @@ button:hover {
     margin-top: 20px;
 }
 
-.loading, .error {
-    font-size: 18px;
+.info-box {
+    background-color: darkpurple;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.weather-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+    color: purple;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.weather-element {
+    background-color: darkpurple;
+    color: white;
+    display: inline;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#weather-line1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#weather-line2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#weather-line3 {
+    width: 40%;
+    margin: 0 auto;
 }

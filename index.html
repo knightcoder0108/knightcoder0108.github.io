@@ -9,12 +9,36 @@
 </head>
 <body>
     <div id="app">
-        <div id="search-section">
-            <h1>Weather API</h1>
-            <button id="get-location-button">Get Current Location</button>
+        <div id="page1" class="page">
+            <div id="search-section">
+                <h1>Weather API</h1>
+                <button id="get-location-button">Fetch Data</button>
+            </div>
         </div>
-        <div id="map"></div>
-        <div id="weather"></div>
+        <div id="page2" class="page">
+            <h1>Welcome To The Weather App</h1>
+            <p>Here is your current location</p>
+            <div id="location-info" class="info-box"></div>
+            <div id="map"></div>
+            <div id="weather">
+                <h2>Your Weather Data</h2>
+                <div id="weather-line1" class="weather-line info-box">
+                    <div class="weather-element">Temp: <span id="temp"></span>°C</div>
+                    <div class="weather-element">Weather: <span id="weather-description"></span></div>
+                    <div class="weather-element">Feels Like: <span id="feels-like"></span>°C</div>
+                </div>
+                <div id="weather-line2" class="weather-line info-box" >
+                    <div class="weather-element">Humidity: <span id="humidity"></span>%</div>
+                    <div class="weather-element">Pressure: <span id="pressure"></span> hPa</div>
+                    <div class="weather-element">Wind Speed: <span id="wind-speed"></span> m/s</div>
+                </div>
+                <div id="weather-line3" class="weather-line info-box">
+                    <div class="weather-element">Wind Direction: <span id="wind-direction"></span>°</div>
+                    <div class="weather-element">Additional Data: <span id="additional-data"></span></div>
+                </div>
+            </div>
+          
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
