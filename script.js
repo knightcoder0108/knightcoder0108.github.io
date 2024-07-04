@@ -1,114 +1,116 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const weatherElementLine1 = document.getElementById('weather-line1');
-    const weatherElementLine2 = document.getElementById('weather-line2');
-    const weatherElementLine3 = document.getElementById('weather-line3');
-    const locationElement = document.getElementById('location-info');
-    const mapElement = document.getElementById('map');
-    const getLocationButton = document.getElementById('get-location-button');
-    const backButton = document.getElementById('back-button');
-    const page1 = document.getElementById('page1');
-    const page2 = document.getElementById('page2');
-    let map;
-    let marker;
+const API_KEY = "eb7c640f95ecbd859f32dccf858906ee";
 
-    function showLoading(message) {
-        weatherElementLine1.innerHTML = `<div class="loading">${message}</div>`;
-        weatherElementLine2.innerHTML = '';
-        weatherElementLine3.innerHTML = '';
+const fetchDataBtn = document.getElementById("fetch-data-btn");
+const hideContainer = document.getElementById("first-container");
+const handleError = document.querySelector(".error");
+
+fetchDataBtn.addEventListener("click", async () => {
+  navigator.geolocation.getCurrentPosition(
+    async (position) => {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        // console.log("***", data);
+        // Display the weather data here
+        displayWeatherData(data);
+        hideContainer.style.display = "none";
+      } catch (error) {
+        console.error(error);
+        handleError.innerHTML = `<h3> User denise the location access</h3>`
+      }
+    },
+    (error) => {
+      console.error(error);
     }
-
-    function showError(message) {
-        weatherElementLine1.innerHTML = `<div class="error">${message}</div>`;
-        weatherElementLine2.innerHTML = '';
-        weatherElementLine3.innerHTML = '';
-    }
-
-    function initializeMap(latitude, longitude) {
-        const location = { lat: latitude, lng: longitude };
-        if (!map) {
-            map = new google.maps.Map(mapElement, {
-                center: location,
-                zoom: 15,
-            });
-            marker = new google.maps.Marker({
-                position: location,
-                map: map,
-            });
-        } else {
-            map.setCenter(location);
-            marker.setPosition(location);
-        }
-    }
-
-    function fetchWeather(latitude, longitude) {
-        const apiKey = '51f9a4916778c644290e9754f66ec7a0';
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                if (data.cod === 200) {
-                    weatherElementLine1.innerHTML = `
-                        <div class="weather-info">Temp: ${data.main.temp}°C</div>
-                    `;
-                    weatherElementLine2.innerHTML = `
-                        <div class="weather-info">Weather: ${data.weather[0].description}</div>
-                    `;
-                    weatherElementLine3.innerHTML = `
-                        <div class="weather-info">Feels Like: ${data.main.feels_like}°C</div>
-                        <div class="weather-info">Humidity: ${data.main.humidity}%</div>
-                        <div class="weather-info">Pressure: ${data.main.pressure} hPa</div>
-                        <div class="weather-info">Wind Speed: ${data.wind.speed} m/s</div>
-                        <div class="weather-info">Wind Dir: ${data.wind.deg}°</div>
-                    `;
-                } else {
-                    showError('Failed to retrieve weather data.');
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching weather data:', error);
-                showError('Error fetching weather data.');
-            });
-    }
-
-    function getLocation() {
-        if (navigator.geolocation) {
-            showLoading('Fetching location...');
-            navigator.geolocation.getCurrentPosition(
-                position => {
-                    const { latitude, longitude } = position.coords;
-                    locationElement.innerHTML = `Latitude: ${latitude}, Longitude: ${longitude}`;
-                    initializeMap(latitude, longitude);
-                    fetchWeather(latitude, longitude);
-                    showPage2();
-                },
-                error => {
-                    showError('Failed to get location.');
-                }
-            );
-        } else {
-            showError('Geolocation is not supported by this browser.');
-        }
-    }
-
-    function showPage1() {
-        page1.style.display = 'block';
-        page2.style.display = 'none';
-    }
-
-    function showPage2() {
-        page1.style.display = 'none';
-        page2.style.display = 'block';
-    }
-
-    getLocationButton.addEventListener('click', () => {
-        getLocation();
-    });
-
-    backButton.addEventListener('click', () => {
-        showPage1();
-    });
-
-    // Automatically get location on load
-    getLocation();
+  );
 });
+
+// To get wind Direction
+function getDirection(degree) {
+    if (
+      (degree >= 348.75 && degree <= 360) ||
+      (degree >= 0 && degree < 11.25)
+    ) {
+      return "North";
+    } else if (degree >= 11.25 && degree < 33.75) {
+      return "North-Northeast";
+    } else if (degree >= 33.75 && degree < 56.25) {
+      return "North East";
+    } else if (degree >= 56.25 && degree < 78.75) {
+      return "East-North East";
+    } else if (degree >= 78.75 && degree < 101.25) {
+      return "East";
+    } else if (degree >= 101.25 && degree < 123.75) {
+      return "East-South East";
+    } else if (degree >= 123.75 && degree < 146.25) {
+      return "South East";
+    } else if (degree >= 146.25 && degree < 168.75) {
+      return "South-South East";
+    } else if (degree >= 168.75 && degree < 191.25) {
+      return "South";
+    } else if (degree >= 191.25 && degree < 213.75) {
+      return "South-South West";
+    } else if (degree >= 213.75 && degree < 236.25) {
+      return "South West";
+    } else if (degree >= 236.25 && degree < 258.75) {
+      return "West-South West";
+    } else if (degree >= 258.75 && degree < 281.25) {
+      return "West";
+    } else if (degree >= 281.25 && degree < 303.75) {
+      return "West-North West";
+    } else if (degree >= 303.75 && degree < 326.25) {
+      return "North West";
+    } else if (degree >= 326.25 && degree < 348.75) {
+      return "North-North West";
+    } else {
+      return "Invalid degree input";
+    }
+  }
+
+function displayWeatherData(data) {
+  const kelvin = data.main.temp;
+  const kelvinToCelsius = Math.floor(Math.abs(kelvin - 273.15));
+  const description = data.weather[0].description;
+  const cityName = data.name;
+  const lat = data.coord.lat;
+  const lon = data.coord.lon;
+  const windSpeed = data.wind.speed;
+  const humidity = data.main.humidity;
+  const pressure = data.main.pressure;
+  const windDirection = data.wind.deg;
+
+  //   console.log(lat, lon, cityName);
+// wind direction we get  
+  const windDirectionCalculated = getDirection(windDirection);
+
+  const weatherContainer = document.getElementById("weather-container");
+  weatherContainer.innerHTML = `
+  <div class="main-section">
+     <div class="main-container">
+     <h2 id="location-header">Welcome To The Weather App</h2>
+      <p id="subheading">Here is your current location</p>
+    <div class="latlong">
+    <p class="details">Lat: ${lat}</p>
+    <p class="details">Long: ${lon}</p>
+    </div>
+    <div class="map">
+    <iframe src="https://maps.google.com/maps?q=${lat},${lon}&z=15&output=embed" width="600" height="300" frameborder="0" style="border:0"></iframe>
+    </div>
+    </div>    
+    
+    <h2 class="heading-3">Your Weather Data</h2> 
+    <div class="footer-container">
+    <p class="details">Location: ${cityName}</p>
+    <p class="details">Wind Speed: ${windSpeed}kmph</p>
+    <p class="details">Humidity: ${humidity}</p>
+    <p class="details">Pressure: ${pressure}atm</p>
+    <p class="details">Wind Direction: ${windDirectionCalculated}</p>
+    <p class="details">Description: ${description}</p>
+    <p class="details">Feels like: ${kelvinToCelsius}°</p>
+    </div>
+    </div>
+  `;
+}
